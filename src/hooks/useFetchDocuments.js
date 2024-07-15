@@ -49,12 +49,10 @@ export const useFetchDocuments = (docCollection, search = null, uid = null) =>{
                 setLoad(false)
 
             } catch (error) {
-                console.log(error),
                 setError(error)
 
                 setLoad(false)
             }
-
         }
 
         loadData()
